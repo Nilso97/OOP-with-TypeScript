@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const Mage_1 = require("./Mage");
+const Priest_1 = require("./Priest");
+let mage = new Mage_1.Mage('Nilso mage');
+let priest = new Priest_1.Priest('Nilso priest');
+const personagens = [];
+personagens.push(mage);
+personagens.push(priest);
+personagens.forEach((p) => console.log(p instanceof Mage_1.Mage ? p.atacar() : p.atacar()));
