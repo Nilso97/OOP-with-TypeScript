@@ -1,5 +1,1 @@
-https://vidafullstack.com.br/javascript/como-usar-typescript-com-nodejs-e-express/
-
-https://www.youtube.com/watch?v=r_wyef7ZK2g&t=635s
-
-https://blog.rocketseat.com.br/typescript-vantagens-mitos-conceitos/
+https://www.youtube.com/watch?v=j_7iMzt1eLs&list=PL370TvW48yBuy7sm6-HqE97w4zRl_4H2n&index=6
