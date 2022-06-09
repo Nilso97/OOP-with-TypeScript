@@ -2,35 +2,26 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.ContaBancaria = void 0;
 class ContaBancaria {
-    constructor() {
+    constructor(numero, agencia) {
         this._saldo = 0;
-        this._numero = '00000-0';
-        this._agencia = '0000-0';
+        this.numero = this._validarNumero(numero) ? numero : '00000-0';
+        this.agencia = this._validarAgencia(agencia) ? agencia : '0000-0';
     }
     // Getters e Setters
     get numero() {
         return this._numero;
     }
     set numero(valor) {
-        // REGEX - Expressões Regulares
-        const regex = /^\d{5}-\d{1}$/;
-        if (regex.test(valor)) {
+        if (this._validarNumero(valor)) {
             this._numero = valor;
-        }
-        else {
-            console.log('Formato de número inválido!');
         }
     }
     get agencia() {
         return this._agencia;
     }
     set agencia(valor) {
-        const regex = /^\d{4}-\d{1}$/;
-        if (regex.test(valor)) {
+        if (this._validarAgencia(valor)) {
             this._agencia = valor;
-        }
-        else {
-            console.log('Formato de número inválido!');
         }
     }
     consultar() {
@@ -48,6 +39,25 @@ class ContaBancaria {
             this._saldo -= valor;
             return true;
         }
+        return false;
+    }
+    _validarNumero(numero) {
+        // REGEX - Expressões Regulares
+        const regex = /^\d{5}-\d{1}$/;
+        if (regex.test(numero)) {
+            this._numero = numero;
+            return true;
+        }
+        console.log('Formato de "Número" inválido!');
+        return false;
+    }
+    _validarAgencia(agencia) {
+        const regex = /^\d{4}-\d{1}$/;
+        if (regex.test(agencia)) {
+            this._agencia = agencia;
+            return true;
+        }
+        console.log('Formato de "Agência" inválido!');
         return false;
     }
 }
