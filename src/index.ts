@@ -1,7 +1,5 @@
 import { ContaBancaria } from "./ContaBancaria";
 
-const conta1 = new ContaBancaria();
+const conta = new ContaBancaria('01234-5', '1234-5');
 
-conta1.numero = '01234-5';
-conta1.agencia = '234-5';
-console.log(conta1);
+console.log(conta);
