@@ -2,8 +2,8 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const Mage_1 = require("./Mage");
 const Priest_1 = require("./Priest");
-let mage = new Mage_1.Mage('Nilso mage');
-let priest = new Priest_1.Priest('Nilso priest');
+let mage = new Mage_1.Mage('Cornelius mage');
+let priest = new Priest_1.Priest('Samuel Jacob priest');
 const personagens = [];
 personagens.push(mage);
 personagens.push(priest);
