@@ -15,7 +15,7 @@ export class Priest extends Personagem {
     }
 
     public atacar(): string {
-        return 'Ataque do Padre'
+        return '*** Ataque do Padre Samuel Jacob ***'
     }
 
     // Auto adicionou a assinatura do método da classe abstrata
