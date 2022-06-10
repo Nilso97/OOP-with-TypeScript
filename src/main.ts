@@ -2,8 +2,8 @@ import { Personagem } from './Personagem';
 import { Mage } from './Mage';
 import { Priest } from './Priest';
 
-let mage: Personagem = new Mage('Nilso mage');
-let priest: Personagem = new Priest('Nilso priest');
+let mage: Personagem = new Mage('Cornelius mage');
+let priest: Personagem = new Priest('Samuel Jacob priest');
 
 const personagens: Personagem[] = [];
 
