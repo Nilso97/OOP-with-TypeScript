@@ -16,7 +16,7 @@ export class Mage extends Personagem {
     }
 
     public atacar(): string {
-        return 'Ataque do Mago'
+        return 'Ataque do Mago Cornelius'
     }
 
     // Auto adicionou a assinatura do método da classe abstrata
