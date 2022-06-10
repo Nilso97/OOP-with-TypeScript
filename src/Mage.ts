@@ -7,7 +7,6 @@ export class Mage extends Personagem {
 
     constructor(nome: string) {
         super(nome);
-
         this._armadura = Util.randomizar(100, 1_000);
         this._vidaMaxima = Util.randomizar(100, 1_000);
         this._vidaAtual = Util.randomizar(40, this._vidaMaxima);
@@ -16,7 +15,7 @@ export class Mage extends Personagem {
     }
 
     public atacar(): string {
-        return 'Ataque do Mago Cornelius'
+        return '*** Ataque do Mago Cornelius ***'
     }
 
     // Auto adicionou a assinatura do método da classe abstrata
