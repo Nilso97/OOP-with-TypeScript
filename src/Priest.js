@@ -13,7 +13,7 @@ class Priest extends Personagem_1.Personagem {
         this._versatilidade = Util_1.Util.randomizar(100, 11000);
     }
     atacar() {
-        return 'Ataque do Padre';
+        return '*** Ataque do Padre Samuel Jacob ***';
     }
 }
 exports.Priest = Priest;
