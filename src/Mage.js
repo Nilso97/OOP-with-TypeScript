@@ -13,7 +13,7 @@ class Mage extends Personagem_1.Personagem {
         this._velocidade = Util_1.Util.randomizar(1, 2000);
     }
     atacar() {
-        return 'Ataque do Mago';
+        return '*** Ataque do Mago Cornelius ***';
     }
 }
 exports.Mage = Mage;
