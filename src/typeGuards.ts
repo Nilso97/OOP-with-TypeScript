@@ -1,4 +1,4 @@
-// Type Guards
+// Type Guard
 
 interface Developer {
     name: string;
