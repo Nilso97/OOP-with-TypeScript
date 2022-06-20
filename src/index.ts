@@ -37,4 +37,4 @@ personWithAddress.name;
 personWithAddress.age;
 // Address
 personWithAddress.street;
-personWithAddress.zipCode
+personWithAddress.zipCode;
