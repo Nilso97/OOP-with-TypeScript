@@ -1,64 +1,75 @@
 // Type Guards
 
-interface Developer {
+/*
+Exemplo:
+
+function printType(value: number | string) {
+    if (typeof value === 'number') {
+        // value.
+    }
+    else if (typeof value === 'string') {
+        // value.
+    }
+}
+*/
+
+interface IDeveloper {
     name: string;
     language: string;
 }
 
-interface Designer {
+interface IDesigner {
     name: string;
     software: string;
 }
 
-const developer: Developer = {
+const developer: IDeveloper = {
     name: 'John',
-    language: 'JavaScript'
+    language: 'JavaScript/TypeScript'
 }
 
-const designer: Designer = {
-    name: 'Mary',
+const designer: IDesigner = {
+    name: 'Suzan',
     software: 'Photoshop'
 }
 
-// Union Types ... | ... = ... ou ...
-
+// Forma 02 - "person as IDeveloper" 
+// OBS: Essa não é a forma mais correta de utilizar o type guards!
 /*
-Forma 1 - Daria certo somente com o if, já com o else não...
-
-function printSkill(person: Developer | Designer): void {
-    if ((person as Developer).language) {
-        console.log((person as Developer).language);
+function printSkill(person: IDeveloper | IDesigner): void {
+    if ((person as IDeveloper).language) {
+        console.log((person as IDeveloper).language);
     } else {
-        console.log('Designer');
+        // person.   Erro - typescript não reconhece se "person" é um IDeveloper ou IDesigner ou seja, daria certo somente com o if, já com o else não...
+        console.log('designer'); 
     }
 }
-
 */
 
-// Forma 2 - Deu certo!
+// Forma 03 - ("propriedade" in person)
+
 /*
-function printSkill(person: Developer | Designer): void {
+function printSkill(person: IDeveloper | IDesigner): void {
     if ('language' in person) {
-        console.log(person.name);
-        console.log(person.language);
+        person.language;
+        console.log('developer');
     } else {
-        console.log(person.name);
-        console.log(person.software);
+        person.software;
+        console.log('designer');
     }
 }
 */
 
-// Forma 3
-function isDeveloper(person: Developer | Designer): person is Developer {
+// Forma 04 - Criando uma Função como Type Guards
+
+function isDeveloper(person: IDeveloper | IDesigner): person is IDeveloper {
     return 'language' in person;
 }
 
-function printSkill(person: Developer | Designer): void {
+function printSkill(person: IDeveloper | IDesigner): void {
     if (isDeveloper(person)) {
-        console.log(person.name);
         console.log(person.language);
     } else {
-        console.log(person.name);
         console.log(person.software);
     }
 }
