@@ -1,4 +1,4 @@
-// Interfac
+// Interface
 export interface IUser {
     name: string;
     phone: string;
