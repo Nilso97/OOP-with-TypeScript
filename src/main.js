@@ -41,7 +41,7 @@ while (option != 9 || person.isDead()) {
             console.log(person.status());
             break;
         default:
-            break;....
+            break;
     }
 }
 console.log("GAME OVER!");
