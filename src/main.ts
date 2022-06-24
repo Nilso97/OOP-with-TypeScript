@@ -35,13 +35,13 @@ while (option != 9 || person.isDead()) {
       console.log(person.status());
       break;
 
-    case 4:
+    case 8:
       let rest: number = person.batalhar();
       console.log(`Essa batalha custo ${rest} de energia...`);
       console.log(person.status());
       break;
 
-    case 5:
+    case 9:
       console.log(person.status());
   }
 }
