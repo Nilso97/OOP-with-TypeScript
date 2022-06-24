@@ -1,4 +1,4 @@
-// Encapsulament
+// Encapsulamento
 
 export default class Personagem {
   constructor(
