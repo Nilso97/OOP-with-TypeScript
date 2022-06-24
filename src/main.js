@@ -32,12 +32,12 @@ while (option != 9 || person.isDead()) {
             person.descansar(horas);
             console.log(person.status());
             break;
-        case 4:
+        case 8:
             let rest = person.batalhar();
             console.log(`Essa batalha custo ${rest} de energia...`);
             console.log(person.status());
             break;
-        case 5:
+        case 9:
             console.log(person.status());
     }
 }
