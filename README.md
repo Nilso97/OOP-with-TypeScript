@@ -1,5 +1,4 @@
-https://vidafullstack.com.br/javascript/como-usar-typescript-com-nodejs-e-express/
+### Game feito na vídeo-aula de Encapsulamento com TypeScript
 
-https://www.youtube.com/watch?v=r_wyef7ZK2g&t=635s
-
-https://blog.rocketseat.com.br/typescript-vantagens-mitos-conceitos/
+Segue abaixo o link da aula:
+https://www.youtube.com/watch?v=JI_HL9499ZU&list=PLDqnSpzNKDvnh-0RCYbIL5WzGCCFV1Ghm&index=4
