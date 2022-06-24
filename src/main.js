@@ -37,8 +37,11 @@ while (option != 9 || person.isDead()) {
             console.log(`Essa batalha custo ${rest} de energia...`);
             console.log(person.status());
             break;
-        case 9:
+        case 8:
             console.log(person.status());
+            break;
+        default:
+            break;....
     }
 }
 console.log("GAME OVER!");
