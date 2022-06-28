@@ -1,4 +1,4 @@
-// Type Predicates em TypeScrip
+// Type Predicates em TypeScript
 
 export type MyRequest<B = any, Q = B> = { // Tipos genéricos
   body?: B;
