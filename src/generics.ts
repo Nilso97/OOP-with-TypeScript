@@ -1,4 +1,4 @@
-// Generics from TypeScript/
+// Generics from TypeScript
 
 // S => State
 // T => Type
